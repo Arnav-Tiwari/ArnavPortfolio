@@ -1,3 +1,9 @@
+// @import "../Breakpoint/breakpoints.scss";
+:root {
+  // --fontFamily:'La Belle Aurore',cursive;;
+  --fontFamily: "Indie Flower", cursive;
+  --fontFamily2: "Montserrat", sans-serif;
+}
 .home {
   width: 100vw;
   height: 100vh;
@@ -6,7 +12,7 @@
     position: absolute;
     // width: 100vw;
     // height: 100vh;
-    top:0;
+    top: 0;
     bottom: 0;
     left: 0;
     right: 0;
@@ -40,7 +46,7 @@
             // font-family: sans-serif;
             width: 100%;
             font-family: "Montserrat", sans-serif;
-            font-size: 12px;
+            font-size: 1.3vw;
             font-weight: 500;
             letter-spacing: 2px;
             text-transform: uppercase;
@@ -55,7 +61,7 @@
           overflow: hidden;
           //   font-family: sans-serif;
           font-family: "Montserrat", sans-serif;
-          font-size: 10px;
+          font-size: 12px;
           line-height: 1.9em;
           font-weight: 400;
           .d-mask {
@@ -80,17 +86,98 @@
             font-size: 12vw;
             color: black;
             font-weight: 900;
-            // font-family: "Franklin Gothic Medium", "Arial Narrow", Arial,
-            //   sans-serif;
-            font-family: "Montserrat", sans-serif;
+            font-family: var(--fontFamily2);
+
             filter: blur(20px);
-            // font-family: "Nanum Pen Script", cursive;
-            // font-family: "Grandslang roman", sans-serif;
-            // font-family: "Allura", cursive;
             text-decoration: none;
           }
           &:hover {
             transform: translateX(1rem) skew(-10deg);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media all and (max-width: 950px) {
+  body {
+    overflow-y: visible;
+  }
+  .home {
+    .home-wrapper {
+      display: block;
+      overflow-y: auto;
+      position: relative;
+      .section-left {
+        width: 100%;
+        height: 40vh;
+        padding-top: 10%;
+        padding-left: 6%;
+        .content {
+          .header-mask {
+            .header {
+              font-size: 2.5vw;
+            }
+          }
+          .description-mask {
+            p {
+              font-size: 1.5vw;
+            }
+          }
+        }
+      }
+      .section-right {
+        display: block;
+        .home-nav {
+          .home-nav-item {
+            .nav-link {
+              font-size: 13vw;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media all and (max-width: 759px) {
+  body {
+    overflow-y: visible;
+  }
+  .home {
+    .home-wrapper {
+      display: block;
+      overflow-y: auto;
+      position: relative;
+      .section-left {
+        width: 100%;
+        height: 40vh;
+        padding-top: 10%;
+        padding-left: 0%;
+        .content {
+          .header-mask {
+            .header {
+              font-size: 3vh;
+            }
+          }
+          .description-mask {
+            p {
+              font-size: 2vh;
+            }
+          }
+        }
+      }
+      .section-right {
+        display: block;
+        .home-nav {
+          padding: 0;
+          .home-nav-item {
+            margin: 1rem;
+            margin-left: 0rem;
+            .nav-link {
+              font-size: 10vw;
+            }
           }
         }
       }

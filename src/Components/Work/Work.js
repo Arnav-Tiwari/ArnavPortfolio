@@ -1,13 +1,15 @@
-import React, { useEffect } from "react";
+import React, { useContext, useEffect } from "react";
 import work_data from "./workdata.js";
 import "./Work.scss";
 import Pagenav from "../Nav/Pagenav.js";
 import gsap from "gsap";
+import { Link } from "react-router-dom";
+import WorkContext from "../Context/WorkContext.js";
 const navData = [{ work: "Home" }];
 const Work = () => {
   const doAnimate = () => {
     const tl = gsap.timeline();
-    tl.to(".work-overlay", { top: "0%", duration: 1.2, ease: "expo.inOut" })
+    tl.to(".work-overlay", { bottom: "100%", duration: 1.2, ease: "expo.inOut" })
       .to(".header-mask-para", { y: 0, duration: 0.1, ease: "power2.out" }, 0.9)
       .to(
         ".description-mask-para",
@@ -28,9 +30,12 @@ const Work = () => {
         0.8
       );
   };
+  const {setWorkId} = useContext(WorkContext);
+  const {getData} = useContext(WorkContext);
   useEffect(() => {
     doAnimate();
-  });
+    getData();
+  },[]);
   return (
     <div className="work">
       <Pagenav navData={navData} color="white" />
@@ -65,7 +70,7 @@ const Work = () => {
             return (
               <>
                 <div key={key} className="work-list-item">
-                  <h1 className="work-list-header">{name}</h1>
+                  <Link to="/workDisplay" onClick={()=>{setWorkId(name)}}><h1 className="work-list-header">{name}</h1></Link>
                   <p className="work-list-para">{description}</p>
                 </div>
                 {/* <p>{JSON.stringify(desp)}</p> */}

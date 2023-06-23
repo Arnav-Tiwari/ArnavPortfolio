@@ -1,59 +1,33 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./Pagenav.scss";
+
 const Pagenav = ({ navData, color }) => {
   console.log(navData);
   const style = {
-    color: color,
+    // color: `${color==="black"?'--blackColor':'#fff'}`,
+    // backgroundColor: `${color==="black"?'--blackColor':'--whiteColo'}`,
+    '--textColor':color
   };
+  console.log("CHECKING ",navData[0],"   ",navData[0].work==="Work"?'/Work':'/');
+  console.log(style.color+"  "+style.backgroundColor);
   return (
     <div className="page-nav">
-      {Object.entries(navData).map((item) => {
+      {Object.entries(navData).map((item,key) => {
         return (
-          <div className="page-nav-item">
-            <Link to="/" className="page-nav-link" style={style}>
-              {/* {console.log("ITEM", item)}
-              {console.log(item[1].work)} */}
+          <div className="page-nav-item" key={key}>
+            <Link to={`${item[1].work==="Work"?'/Work':'/'}`} className={`page-nav-link`} style={style} >
               {item[1].work}
             </Link>
           </div>
         );
       })}
-      <div className="page-nav-line"></div>
+      <div className="page-nav-line" style={style}></div>
       <div className="page-nav-item nav-copyright">
         <div className="copyright" style={style}>
           @/2023
         </div>
       </div>
-      {/* <div className="left-nav-item">
-      <a href="" className="left-nav-link">
-        LC
-      </a>
-    </div>
-    <div className="left-nav-item">
-      <a
-        href=""
-        target="_blank"
-        className="left-nav-link"
-        onClick={() => f()}
-      >
-        GH
-      </a>
-    </div>
-    <div className="left-nav-item">
-      <a href="" className="left-nav-link">
-        HR
-      </a>
-    </div>
-    <div className="left-nav-item">
-      <a href="" className="left-nav-link">
-        CF
-      </a>
-    </div>
-    <div className="left-nav-line"></div>
-    <div className="left-nav-item nav-copyright">
-      <div className="copyright">@/2023</div>
-    </div> */}
     </div>
   );
 };
