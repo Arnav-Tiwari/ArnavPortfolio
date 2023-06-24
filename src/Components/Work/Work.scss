@@ -59,7 +59,7 @@
       }
     }
     .section-right {
-      width: 70%;
+      width: 85%;
       left: auto;
       right: 0%;
       margin-left: 25%;
@@ -89,6 +89,13 @@
           text-transform: uppercase;
           letter-spacing: 1.5px;
           font-weight: 50;
+        }
+
+        &:last-child{
+          .work-list-para{
+            // background: #fff;
+            padding-bottom: 1rem;
+          }
         }
       }
     }
