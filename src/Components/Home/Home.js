@@ -71,7 +71,7 @@ const Home = () => {
             </div>
             <div className="description-mask">
               <p className="d-mask">
-                Current working as an Intern at HealthKart
+              Possessing the requisite knowledge of the Frontend in React and the Backend using Core Java and Spring Boot. 
               </p>
             </div>
           </div>

@@ -10,12 +10,16 @@ const Contact = () => {
     const tl = gsap.timeline();
 
     tl.to(".contact-overlay", animate)
-      
-      .to(".contact-link", {
-        y: 0,
-        duration: 1,
-        ease: "expo.inOut",
-      },1)
+
+      .to(
+        ".contact-link",
+        {
+          y: 0,
+          duration: 1,
+          ease: "expo.inOut",
+        },
+        1
+      )
       .to(
         ".description",
         {
@@ -25,11 +29,15 @@ const Contact = () => {
         },
         1
       )
-      .to(".header", {
-        y: 0,
-        duration: 1,
-        ease: "expo.inOut",
-      },1.5);
+      .to(
+        ".header",
+        {
+          y: 0,
+          duration: 1,
+          ease: "expo.inOut",
+        },
+        1.5
+      );
   };
 
   const doAnimateMailOverlay = () => {
@@ -52,10 +60,8 @@ const Contact = () => {
           </div>
           <div className="description-mask">
             <p className="description">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
-              ullam illum iusto aspernatur ut non, nihil cum, tempore deserunt
-              at iste quisquam eos eligendi totam. Nam at odit similique
-              quibusdam.
+              I am open to exploring new opportunities and working with
+              companies.Feel free to contact me.
             </p>
           </div>
           <div className="description-mask">
@@ -65,8 +71,12 @@ const Contact = () => {
           </div>
           <div className="description-mask">
             <p className="contact-link">
-              On the Internet: <a href="">LinkedIn</a>/ <a href="">LeetCode</a>/{" "}
-              <a href="">GitHub</a>
+              On the Internet:{" "}
+              <a href="https://www.linkedin.com/in/arnav-tiwari-0b73a41a5/">
+                LinkedIn
+              </a>
+              / <a href="https://leetcode.com/Arnav_Tiwari/">LeetCode</a>/{" "}
+              <a href="https://github.com/Arnav-Tiwari">GitHub</a>
             </p>
           </div>
         </div>

@@ -41,7 +41,7 @@
           font-weight: 500;
           letter-spacing: 2px;
           text-transform: uppercase;
-          transform: translateY(1rem);
+          transform: translateY(2.5rem);
         }
       }
       .description-mask {
@@ -64,7 +64,7 @@
       right: 0%;
       margin-left: 25%;
       margin-right: 0px;
-      padding-top: 5%;
+      padding-top: 8%;
       .work-list-item {
         margin-left: 10rem;
         filter: blur(10px);
@@ -76,13 +76,15 @@
         .work-list-header {
           margin-top: 0;
           margin-bottom: 0;
-          font-size: 6vw;
+          font-size: 5vw;
           transition: 0.1s;
+          text-transform: uppercase;
           &:hover {
             transform: translateX(1rem) skew(-10deg);
           }
         }
         .work-list-para {
+          width: 85%;
           margin: 0;
           font-size: 8px;
           padding-left: 0.5rem;
@@ -133,7 +135,7 @@
           a {
           }
           .work-list-header {
-            font-size: 10vw;
+            font-size: 7vw;
             &:hover {
             }
           }
@@ -177,7 +179,7 @@
           a {
           }
           .work-list-header {
-            font-size: 10vw;
+            font-size: 7vw;
             &:hover {
             }
           }

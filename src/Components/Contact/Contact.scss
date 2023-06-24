@@ -39,7 +39,7 @@
       }
       .description-mask {
         overflow: hidden;
-        width: 50%;
+        width: 100%;
         p {
           color: var(--primaryBgColor);
           margin: 0;
@@ -58,6 +58,7 @@
           }
         }
         .contact-link {
+          height: 2rem;
           &:nth-child(1) {
             margin-top: 3%;
           }

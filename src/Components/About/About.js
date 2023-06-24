@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import Pagenav from "../Nav/Pagenav";
 import "./About.scss";
 import { gsap } from "gsap";
+import file from "../../Resume/ArnavResume.pdf"
 const navData = [{ work: "Home" }];
 const About = () => {
   const doAnimate = () => {
@@ -11,11 +12,10 @@ const About = () => {
       bottom: "100%",
       duration: 1,
       ease: "expo.in",
-    })
-    .to(".header",{
-      y:0,
-      duration:1,
-      ease:"expo.inOut"
+    }).to(".header", {
+      y: 0,
+      duration: 1,
+      ease: "expo.inOut",
     });
   };
 
@@ -38,55 +38,53 @@ const About = () => {
             </p>
             <br />
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
-              quam sed praesentium. Quod quos soluta hic ea, commodi fugiat esse
-              accusamus quibusdam possimus beatae placeat explicabo,
-              exercitationem dolores laboriosam cum.
+              I have been practising algorithmic problem solving on various
+              online platforms, primarily Leetcode, Hackerrank, and Codeforce,
+              since my college years. I have a great understanding of data
+              structures and Algorithms and have also solved a significant
+              number of problems on Leetcode and other platforms. I am in the
+              top 7% on Leetcode with a rating of 1789.
             </p>
             <br />
             <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi
-              error nobis animi ipsum dolorem minus commodi quidem nostrum
-              aperiam debitis vitae, accusamus dicta asperiores quia? Aperiam
-              quidem deserunt quasi sed.
+              My development experience includes the requisite exposure to both
+              Frontend and Backend technologies. All of the projects that I have
+              worked on are included here.
             </p>
             <br />
             <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta
-              eaque, consequatur tempora cum dolorem qui atque doloribus quidem
-              quam perferendis, commodi laboriosam, praesentium ipsa cupiditate
-              adipisci debitis asperiores! Repellat, omnis?
+              In Frontend I have worked on React (the Javascript library),
+              having knowledge of hooks, Context, state management using Redux,
+              as well as practising advanced animations using GSAP. I am also
+              versed in HTML, CSS and SASS (advanced CSS).
             </p>
             <br />
             <span className="title">
-              There is nothing so useless as doing efficiently that which should
-              not be done at all.
+              Sometimes it is the people who no one imagines anything of who do
+              the things that no one can imagine.
             </span>
             <br />
             <br />
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Aspernatur est impedit dignissimos sed a tempore, id amet dolor
-              delectus aperiam ullam perspiciatis, maxime minima distinctio
-              quasi magnam voluptatum corporis hic!
+              In the backend, I have worked on Spring Boot for developing REST
+              APIs. I have also worked on a stand-alone Spring MVC project in my
+              internship in which the frontend part of the application was
+              managed with Thymeleaf following the proper MVC model with the
+              creation of Controller, Services and DAO layers.
             </p>
             <br />
             <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam,
-              quo maxime tempora distinctio incidunt dolorum! Excepturi, sequi?
-              Sequi aliquam, nesciunt cum a unde officia fuga. Voluptatum
-              temporibus quo cupiditate dignissimos!
+              I also often write discussion articles related to problem solving
+              on Leetcode and post small projects related to development on
+              Codepen.
             </p>
-            <br />
             <span className="header">
               <br />
               Experience
             </span>
-            <p className="exp">this is experience</p>
-            <p className="exp">this is experience</p>
-            <p className="exp">this is experience</p>
-            <p className="exp">this is experience</p>
-            <p className="exp">this is experience</p>
+            <p className="exp">SDE Internship @HEALTHKART</p>
+            <p className="exp">Intership @WIPRO TALENTNEXT</p>
+            <p className="exp">Internship @IBM SKILLSBUILD</p>
             <br />
             <br />
             <br />
@@ -94,18 +92,17 @@ const About = () => {
             <br />
             <br />
             <p className="skills">
-              UI/UX Design / Strategy / Product Management / User Research /
-              Agile Methodologies / Collaboration / Design Sprints / Design
-              Systems / HTML and CSS / CMS Design & Architecture / Webflow
-              Development / Framer Development / Photography / Graphic Design ‍
+              React / Spring Boot / Core Java / Javascript / Thymeleaf / Data
+              Structures / Algorithms <br /> / Problem Solving/ MongoDB / SQL /
+              SASS / CSS / HTML5
             </p>
             <br />
             <br />
           </div>
           <div className="work-button-container">
-            <Link to="/somewhere" className="work-button">
+            <a href={file} className="work-button" download>
               My CV
-            </Link>
+            </a>
           </div>
           <div className="description-mask">
             <br />
@@ -115,13 +112,13 @@ const About = () => {
             <br />
             <br />
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod illo
-              fugit cum ipsam, modi id minus a rerum amet corporis cumque neque
-              quasi dolores. Sed architecto consectetur numquam quas laborum!
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Repudiandae aut eveniet id fugit neque quos totam consequuntur
-              alias obcaecati deserunt eos iste vel perspiciatis numquam cum,
-              velit facilis, culpa doloribus?
+              Most of what my portfolio contains are the endeavours that I have
+              worked on during this recent year of college.{" "}
+              <span className="work-status">
+                I am open to exploring new opportunities and working with
+                companies
+              </span>
+              . Feel free to contact me. THANK YOU.
             </p>
             <br />
             <br />

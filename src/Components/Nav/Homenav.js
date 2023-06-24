@@ -7,13 +7,13 @@ const Leftnav = () => {
   return (
     <div className="left-nav">
       <div className="left-nav-item">
-        <a href="" className="left-nav-link">
+        <a href="https://leetcode.com/Arnav_Tiwari/" target="_blank" className="left-nav-link">
           LC
         </a>
       </div>
       <div className="left-nav-item">
         <a
-          href=""
+          href="https://github.com/Arnav-Tiwari"
           target="_blank"
           className="left-nav-link"
           onClick={() => f()}
@@ -22,15 +22,15 @@ const Leftnav = () => {
         </a>
       </div>
       <div className="left-nav-item">
-        <a href="" className="left-nav-link">
+        <a href="https://www.hackerrank.com/arnavtiwari100?hr_r=1" target="_blank" className="left-nav-link">
           HR
         </a>
       </div>
-      <div className="left-nav-item">
+      {/* <div className="left-nav-item">
         <a href="" className="left-nav-link">
           CF
         </a>
-      </div>
+      </div> */}
       <div className="left-nav-line"></div>
       <div className="left-nav-item nav-copyright">
         <div className="copyright">@/2023</div>

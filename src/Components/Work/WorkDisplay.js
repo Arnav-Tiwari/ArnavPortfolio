@@ -10,11 +10,13 @@ const WorkDisplay = () => {
   console.log("ID IS ", id);
   console.log("WORKING DATA IS ", work_data);
   const desc = Object.entries(work_data).filter((itm) => {
-    console.log(itm[1].name, "   ", id);
+    console.log(itm);
+    console.log("ITMS IS ",itm[1].name, "   ", id);
     if (itm[1].name === id) {
       return itm[1];
     }
   })[0][1];
+
 
   console.log("DESC ", desc);
   const width=window.innerWidth;
@@ -52,13 +54,14 @@ const WorkDisplay = () => {
           <div className="overlay">
             <div className="overlay-title">
               <div className="overlay-title-wraper">
-                <h1 className="overlay-title-heading">Something is there</h1>
+                <h1 className="overlay-title-heading">{desc.name}</h1>
               </div>
             </div>
           </div>
         </div>
         <div className="work-description">
           <div className="description">{desc.description}</div>
+          <div className="description">-{desc.techStack}</div>
           <br />
           <br />
           <br />
@@ -89,7 +92,7 @@ const WorkDisplay = () => {
             </div>
             <div className="task-content-wrapper">
               <div className="task-header">URL</div>
-              <div className="task">{desc.url}</div>
+              <div className="task"><a href={desc.url} target="_blank">{desc.url}</a></div>
             </div>
           </div>
         </div>

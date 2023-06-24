@@ -5,7 +5,7 @@ const WorkContext = createContext();
 
 const Provider = ({children}) => {
   const [workData, setWorkData] = useState();
-  const [id, setId] = useState("Scroll Trigger");
+  const [id, setId] = useState(work_data[0].name);
   const getData = () => {
     setWorkData(work_data);
   };
