@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/ArnavPortfolio/static/css/main.dc59acf5.css",
-    "main.js": "/ArnavPortfolio/static/js/main.2b30394c.js",
+    "main.css": "/ArnavPortfolio/static/css/main.654dc876.css",
+    "main.js": "/ArnavPortfolio/static/js/main.403167c9.js",
     "static/js/787.9dc234aa.chunk.js": "/ArnavPortfolio/static/js/787.9dc234aa.chunk.js",
     "static/media/logo.svg": "/ArnavPortfolio/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/ArnavPortfolio/index.html",
-    "main.dc59acf5.css.map": "/ArnavPortfolio/static/css/main.dc59acf5.css.map",
-    "main.2b30394c.js.map": "/ArnavPortfolio/static/js/main.2b30394c.js.map",
+    "main.654dc876.css.map": "/ArnavPortfolio/static/css/main.654dc876.css.map",
+    "main.403167c9.js.map": "/ArnavPortfolio/static/js/main.403167c9.js.map",
     "787.9dc234aa.chunk.js.map": "/ArnavPortfolio/static/js/787.9dc234aa.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.dc59acf5.css",
-    "static/js/main.2b30394c.js"
+    "static/css/main.654dc876.css",
+    "static/js/main.403167c9.js"
   ]
 }
